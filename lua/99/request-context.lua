@@ -31,6 +31,8 @@ function RequestContext.from_current_buffer(_99, xid)
     file_type = "typescript"
   elseif file_type == "sh" then
     file_type = "bash"
+  elseif file_type == "ps1" then
+    file_type = "powershell"
   end
 
   local mds = {}
